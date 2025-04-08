@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#F#",
+    "#B#",
+    "G#G"
+  ],
+  "key": {
+    "#": "minecraft:paper",
+    "F": "minecraft:feather",
+    "B": "minecraft:book",
+    "G": "minecraft:gold_nugget"
+  },
+  "result": {
+    "id": "shoppinglist:shopping_list",
+    "count": 1
+  }
+}
