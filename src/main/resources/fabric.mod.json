@@ -1,0 +1,44 @@
+{
+	"schemaVersion": 1,
+	"id": "shoppinglist",
+	"version": "${version}",
+	"name": "Shoppinglist",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/shoppinglist/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.speedygo55.Shoppinglist"
+		],
+		"client": [
+			"com.speedygo55.ShoppinglistClient"
+		],
+		"fabric-datagen": [
+			"com.speedygo55.ShoppinglistDataGenerator"
+		]
+	},
+	"mixins": [
+		"shoppinglist.mixins.json",
+		{
+			"config": "shoppinglist.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.16.12",
+		"minecraft": "~1.21.5",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
